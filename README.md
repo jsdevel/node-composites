@@ -26,7 +26,7 @@ program.push(statement1);
 statement2 = new CompositeString;
 statement1.push(
     "if(", statement2, "){\n",
-    "   alert(5);\n",
+    "    alert(5);\n",
     "}"
 );
 statement2.push(true);
@@ -37,13 +37,13 @@ console.log(program.toString());
 /*
 //my copyright info
 if(true){
-alert(5);
+    alert(5);
 }
 */
 ````
 
-##Adding Composite types
-Extend composite.  If you think it's worth sharing, issue a pull request!
+##Creating custom Composites
+Extend Composite.  If you think it's worth sharing, issue a pull request!
 
 ##License
 ```
