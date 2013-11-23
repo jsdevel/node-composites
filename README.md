@@ -3,6 +3,9 @@
 It is sometimes handy to treat objects in the same way you would treat an array,
 but with special functionality.  This package allows that.
 
+##Installing
+`npm install composites`
+
 ##Example
 
 We're building a parser, and we'd like to generate a tree that represents our
