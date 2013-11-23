@@ -1,0 +1,30 @@
+{
+  "name": "composites",
+  "version": "0.0.0",
+  "description": "Composite tree structures for node.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node node_modules/.bin/mocha"
+  },
+  "devDependencies":{
+     "mocha":"",
+     "sinon":""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jsdevel/node-composites.git"
+  },
+  "keywords": [
+    "arrays",
+    "composite",
+    "composites",
+    "pattern",
+    "structure",
+    "tree"
+  ],
+  "author": "Joseph Spencer",
+  "license": "Apache2.0",
+  "bugs": {
+    "url": "https://github.com/jsdevel/node-composites/issues"
+  }
+}
