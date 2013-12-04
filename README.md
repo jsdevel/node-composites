@@ -29,19 +29,18 @@ program.push("//my copyright info");
 statement1 = new Program;
 program.push(statement1);
 statement2 = new CompositeString;
-statement1.push(
-    "if(", statement2, "){",
-    "    alert(5);",
-    "}"
-);
-statement2.push(true);
+statement1.push("if(", statement2, "){");
+statement1.push("    alert(5);");
+statement1.push("}");
+
+statement2.push(true, " && " , true);
 
 console.log(program.toString());
 
 //logs:
 /*
 //my copyright info
-if(true){
+if(true && true){
     alert(5);
 }
 */

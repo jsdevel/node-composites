@@ -1,6 +1,6 @@
 {
   "name": "composites",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Composite tree structures for node.",
   "main": "index.js",
   "scripts": {
