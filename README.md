@@ -8,25 +8,30 @@ but with special functionality.  This package allows that.
 
 ##Example
 
-We're building a parser, and we'd like to generate a tree that represents our
-program.  You may be tempted to just use arrays, but when you join the elements
-of the array together, you'll get commas in between your elements.
+We're building a transpiler, and we'd like to generate a program.  You may be
+tempted to use arrays, but when you join the elements of the array, you get
+commas in between your elements.  Plus, you have to add line endings to get
+pretty output.
 
-CompositeString overcomes this:
+`CompositeString` joins it's elements without commas.
+
+`Program` adds line endings to `push()`.
 
 ````javascript
-var CompositeString = require('composites').CompositeString;
-var program = new CompositeString();
+var composites      = require('composites');
+var Program         = composites.Program;
+var CompositeString = composites.CompositeString;
+var program         = new Program;
 var statement1;
 var statement2;
 
-program.push("//my copyright info\n");
-statement1 = new CompositeString;
+program.push("//my copyright info");
+statement1 = new Program;
 program.push(statement1);
 statement2 = new CompositeString;
 statement1.push(
-    "if(", statement2, "){\n",
-    "    alert(5);\n",
+    "if(", statement2, "){",
+    "    alert(5);",
     "}"
 );
 statement2.push(true);

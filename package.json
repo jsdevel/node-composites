@@ -1,6 +1,6 @@
 {
   "name": "composites",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Composite tree structures for node.",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,9 @@
     "composites",
     "pattern",
     "structure",
-    "tree"
+    "tree",
+    "generator",
+    "utility"
   ],
   "author": "Joseph Spencer",
   "license": "Apache2.0",
