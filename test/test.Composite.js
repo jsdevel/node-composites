@@ -4,10 +4,6 @@ describe('Composite', function(){
   var composites = require('..');
   var Composite = composites.Composite;
 
-  it('is an instance of Array', function(){
-    (new Composite()).should.be.an.instanceOf(Array);
-  });
-
   describe('instance', function(){
     var sut;
 
