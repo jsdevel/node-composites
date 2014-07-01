@@ -4,11 +4,12 @@
   "description": "Composite tree structures for node.",
   "main": "index.js",
   "scripts": {
-    "test": "node node_modules/.bin/mocha"
+    "test": "mocha -r should"
   },
-  "devDependencies":{
-     "mocha":"",
-     "sinon":""
+  "devDependencies": {
+    "mocha": "",
+    "sinon": "",
+    "should": "~4.0.4"
   },
   "repository": {
     "type": "git",
