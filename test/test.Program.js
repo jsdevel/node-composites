@@ -23,5 +23,10 @@ describe('Program', function(){
         sut.toString().should.equal('if(5)\n');
       });
     });
+
+    it('should allow push to be chained', function(){
+      var compoiste = new Program();
+      compoiste.push('a').push('b').toString().should.equal('a\nb\n');
+    });
   });
 });

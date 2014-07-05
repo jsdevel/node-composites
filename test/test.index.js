@@ -15,4 +15,9 @@ describe('index', function(){
   it('should expose Program', function(){
     index.Program.should.equal(Program);
   });
+
+  it('should allow push to be chained', function(){
+    var compoiste = new Composite();
+    compoiste.push('a').push('b');
+  });
 });
